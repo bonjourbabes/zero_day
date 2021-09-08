@@ -1,0 +1,87 @@
+Package Control Messages
+========================
+
+Babel
+-----
+
+  babel-sublime
+  -------------
+
+  Syntax highlighting has been completely overhauled. The new syntax definition provides better support for modern JavaScript and better compatibility with existing color schemes and tools.
+
+  A few examples of improvements and bug fixes:
+
+  - JSX fragments are fully supported.
+  - Anonymous classes work correctly.
+  - Missing optional semicolons do not break highlighting.
+  - Regular expressions are always correctly detected.
+
+  This is a major change. The new syntax definition has been extensively tested in beta, but if you have any problems then please don't hesitate to report them at https://github.com/babel/babel-sublime/issues.
+
+GitGutter
+---------
+
+  1.11.5:
+
+    Enhancement:
+     - Use system date template in annotations
+
+    Fix:
+     - Support string values in line annotation settings
+
+
+  💛 Git Gutter? Want to support development?
+
+  I've teamed up with Wes Bos to offer the following discounts:
+
+  +------------------------------------------------+
+  |                                                |
+  |   Use the coupon code GITGUTTER for $10 off    |
+  |                                                |
+  +------------------------------------------------+
+
+  🏅 ⭐ ES6 ⭐
+
+  👉 ES6.io/friend/GITGUTTER
+
+  🏅 ⭐ Sublime Text Book ⭐
+
+  👉 SublimeTextBook.com/friend/GITGUTTER
+
+  🏅 ⭐ React For Beginners ⭐
+
+  👉 ReactForBeginners.com/friend/GITGUTTER
+
+
+  Join 15,000 other developers already learning with Wes Bos.
+
+  These are fantastic resources - 100% money back guarantee! 🌟
+  1.11.4:
+  ======
+
+    Fix:
+     - Empty compare target (#560)
+
+SublimeLinter
+-------------
+
+  SublimeLinter 4.17.0
+
+  Mostly shipping maintenance, we have two notable changes for plugins:
+
+  - Beside the obvious `line` and `col` you can now capture `end_line` and
+    `end_col` in the regexes.  The low level `LintMatch` usually used with JSON
+    formats also understands these keys of course.
+
+  - If a plugin wants to log something, no need to `import logging; ...` anymore,
+    as there is a configured `self.logger` now.
+
+    As a reminder:
+
+    * `self.logger.info("message")` only emits in debug mode
+    * `self.logger.warning("message")` always emits to Sublime's builtin console
+    * `self.logger.error("message")` popups a panel (usually don't!)
+
+
+
+  https://github.com/SublimeLinter/SublimeLinter/compare/4.16.3...4.17.0
